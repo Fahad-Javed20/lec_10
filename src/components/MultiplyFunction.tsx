@@ -19,6 +19,7 @@ const MultiplyFunction = ({ x, y }: MultiplyFunctionProps) => {
     return (a + b + c) / 3;
   };
 
+//   Check Even Function
   const isEven = (a: number): boolean => {
     if (a % 2 === 0) {
       return true;
@@ -27,16 +28,24 @@ const MultiplyFunction = ({ x, y }: MultiplyFunctionProps) => {
     }
   };
 
+  //   Check ODD Function
   const isOdd = (a: number): boolean => {
-    return (a % 2 === 0)
+    return (a % 2 !== 0)
   };
+
+
+//   Cube Function
+const cubeOfNumber = (x:number):number =>{
+    return x*x*x
+}
 
   return (
     <div>
       Result:{multiply(x, y)}
       <p>Addition Result: {my_avg(4, 6, 8)}</p>
-      <p>Is Even: {isEven(5) ? "Even":"Not Even"}</p>
-      <p>Is Even: {isOdd(5) ? "Odd":"Not Odd"}</p>
+      <p>Result: {isEven(6) ? "Even":"Not Even"}</p>
+      <p>Result: {isOdd(81) ? "Odd":"Not Odd"}</p>
+      <p>Cube Result: {cubeOfNumber(4)}</p>
     </div>
   );
 };
