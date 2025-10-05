@@ -5,16 +5,27 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import Section from "./Section";
 
-
 export default function MasterComponent() {
   return (
-    <div>
-        < Header/>
-        <Navbar/>
-        <Section/>
-        <Article/>
-        <Aside/>
-        <Footer/>
+    <div >
+
+      <div >
+        <Header />
+        <Navbar />
+      </div>
+
+
+      <div>
+        <Section />
+        <Article />
+        <Aside />
+      </div>
+
+
+      <div>
+        <Footer />
+      </div>
+
     </div>
-  )
+  );
 }
